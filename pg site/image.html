@@ -1,0 +1,40 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+</head>
+
+<body>
+<a href="image.html">Home</a>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="about.html">About us</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+<a href="contact.html">Contact us</a>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+<a href="facilities.html">Facilities</a>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<br /><br /><br /><br />
+<script type="text/javascript">
+    window.onload = function(){
+        window.disssplayImgCount = 0;
+        function cycleImage(){
+            if (displayImgCount !== 0) {
+                document.getElementById("img" + displayImgCount).style.display = "none";
+            }
+            displayImgCount = displayImgCount === 2 ? 1 : displayImgCount + 1;
+            document.getElementById("img" + displayImgCount).style.display = "block";
+            setTimeout(cycleImage, 5000);
+        }
+        cycleImage();
+    }
+</script>
+
+<img id="img1"style="width: 1201px; height: 511px;" align="middle" hspace="50" src="perfect paying guest in ahmedabad for male.jpg" />
+<img id="img2" src="perfect paying guest in Ahmedabad judges bunglow.jpg" />
+</body>
+</html>
